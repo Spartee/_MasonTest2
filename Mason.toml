@@ -6,4 +6,4 @@ author = "Sam Partee"
 source = "https://github.com/Spartee/_MasonTest1"
 
 [dependencies]
-_MasonTest1 = "0.1.0"
+_MasonTest1 = "0.2.0"

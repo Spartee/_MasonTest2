@@ -18,8 +18,9 @@ module _MasonTest2 {
   class Tester2 {
 
     // Class initializers
+    var s: string;
     proc init(s: string) {
-      var s = s;
+      this.s = s;
     }
 
     // Class function
@@ -27,10 +28,13 @@ module _MasonTest2 {
       this.s = newStr;
     }
 
+    // Function dependant on _MasonTest1
+    proc depFunction() {
+      moduleFunction("Dependency check");
+    }
+
     proc this() {
       return this.s;
     }
-    
-
-
+  }
 }
